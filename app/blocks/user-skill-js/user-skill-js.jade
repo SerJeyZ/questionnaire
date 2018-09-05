@@ -1,0 +1,25 @@
+include ../title/title
+
+mixin user-skill-js()
+	+b('fieldset').user-skill-js&attributes(attributes)
+		block
+		+title()
+			|Уровень владения JavaScript
+		+e('section').slider
+			#scale.scale
+				#slider-arrow.slider-arrow
+				.scale-item.null
+					input(type='radio' name='js' id='null' value='null')
+					label(for='null') Не владею
+				.scale-item.jun
+					input(type='radio' name='js' id='jun' value='jun')
+					label(for='jun') Использую готовые решения
+				.scale-item.mid
+					input(type='radio' name='js' id='mid' value='mid' checked)
+					label(for='mid') 
+						span.wor
+						span.
+							Использую готовые решения и умею их переделывать
+				.scale-item.sen
+					input(type='radio' name='js' id='sen' value='sen')
+					label(for='sen') Пишу сложный JS с нуля

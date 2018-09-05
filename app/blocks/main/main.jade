@@ -1,0 +1,24 @@
+include ../recruit/recruit
+include ../user-skill-checkbox/user-skill-checkbox
+include ../user-skill-js/user-skill-js
+include ../about/about
+include ../plan/plan
+include ../date-of-filling/date-of-filling
+include ../button/button
+
+mixin main()
+	+b('main').main&attributes(attributes)
+		block main
+		.layout-position
+			h1.main-title
+				img(src='assets/images/Title.png' width='221' height='118' alt='Дело')
+			form.user-skill(method='post', action='javascript:void(0);')
+				+recruit()
+				+user-skill-checkbox()
+				+user-skill-js()
+				+about()
+				+plan()
+				+date-of-filling()
+				+button()(type='submit') send form
+				
+				

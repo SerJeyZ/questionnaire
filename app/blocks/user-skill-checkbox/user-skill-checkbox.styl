@@ -1,0 +1,53 @@
+.user-skill-checkbox
+	margin-top 67px	
+.column
+	width 255px
+	&:last-child
+		padding-left 12px
+.columns
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	margin-top 15px
+.col-3
+	li
+		margin-top 15px
+.list-skill
+	padding-left 25px
+	&__item
+		position relative
+		margin-top 14px
+		font-size 0
+	label
+		position relative
+		font-size 1.3rem
+		font-family ffP
+		font-weight bold
+		color #000000
+	label::before
+		content ('')
+		display block
+		position absolute
+		left -25px
+		top 5px
+		width 19px
+		height 19px
+		
+		sprite $checkbox
+		background-repeat no-repeat
+	label::after
+		content ('')
+		display block
+		position absolute
+		left -22px
+		top -6px
+		width 21px
+		height 27px
+		sprite $checked
+		background-repeat no-repeat
+	input
+		display none
+	label::after
+		display none
+	input[type="checkbox"]:checked + label::after 
+		display block

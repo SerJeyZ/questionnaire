@@ -1,0 +1,19 @@
+mixin recruit()
+	+b('fieldset').recruit&attributes(attributes)
+		block
+		+b('ul').user
+			+e('li').initials
+				label(for='initials') Полное ФИО
+				input(type="text" name='initials' id='initials' value='Задорожный Сергей Александрович')
+			+e('li').birth
+				label(for='birth') Год рождения
+				input(type="text" name='birth' id='birth' value='1984')
+			+e('li').location
+				label(for='location') Место жительства
+				input(type="text" name='location' id='location' value='г. Омск, Россия')
+			+e('li').skype
+				label(for='skype') Скайп
+				input(type="text" name='skype' id='skype' value='SergeyZet')
+			+e('li').e-mail
+				label(for='e-mail') Почта
+				input(type="e-mail" name='e-mail' id='e-mail' value='rabotnik345@gmail.com')

@@ -1,0 +1,10 @@
+include ../title/title
+include ../block-discription/block-discription
+mixin about()
+	+b('fieldset').about&attributes(attributes)
+		block
+		+title()
+			|Расскажите о себе словами
+		+block-discription()(class='block-discription--margin-top block-discription--padding-left')
+			|Напишите пару предложений о ваших ожиданиях от работы. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+		textarea.about__text(name='about') Всем привет ожидаю levelup по всем направлениям, работа в хорошей команде, ну и интересные задачи!

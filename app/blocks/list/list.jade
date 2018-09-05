@@ -1,0 +1,11 @@
+mixin list(atr)
+	+e('li').item
+		doctype html
+		input(type='checkbox' name=atr.name id=atr.name checked=atr.checked)
+		if atr.href
+			label(for=atr.name) #{atr.text}
+				a(href=atr.href) #{atr.link}
+		else
+			label(for=atr.name) #{atr.text}
+
+	block

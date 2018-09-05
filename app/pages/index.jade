@@ -1,0 +1,10 @@
+extends /blocks/layout-default/layout-default
+include ../blocks/page-header/page-header
+include ../blocks/main/main
+
+block head
+	- var pageTitle = "My questionnaire";
+
+block content
+	+page-header
+	+main

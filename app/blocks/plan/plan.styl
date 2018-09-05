@@ -1,0 +1,37 @@
+.plan
+	margin-top 12px
+	padding-bottom 10px
+.plan__item
+	position relative
+	display inline-block
+	margin-top 17px
+	margin-right 19px
+	padding-left 31px
+	font-size 1.25rem
+	font-family PT Sans
+	font-weight bold
+	color #000000
+	label::before
+		content ('')
+		display block
+		position absolute
+		left -1px
+		top -5px
+		width 30px
+		height 30px
+		sprite $radio
+		background-repeat no-repeat	
+	 label::after
+		content ('')
+		display none
+		position absolute
+		left 8px
+		top 3px
+		width 15px
+		height 15px
+		sprite $radio_activ
+		background-repeat no-repeat	
+	input
+		display none
+	input[type="radio"]:checked + label::after
+		display block

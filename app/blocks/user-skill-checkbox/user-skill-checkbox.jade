@@ -1,0 +1,27 @@
+
+include ../title/title
+include ../block-discription/block-discription
+include ../list/list
+mixin user-skill-checkbox()
+	+b('fieldset').user-skill-checkbox&attributes(attributes)
+		block
+		+title()
+			|Расскажите о себе чекбоксами
+		+block-discription()
+			|Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+		section.columns
+			.column
+				- var skill = [{name:'bem',text:'БЭМ/OOCSS',checked:true},{name:'pug',text:'Pug (Jade)',checked:true},{name:'stylus',text:'Stylus/LESS/SASS',checked:true},{name:'svg',text:'Работаю с SVG',checked:true},{name:'semantica',text:'Верстаю семантично',checked:true},{name:'a11y',text:'Accessibility (A11Y)',checked:true},{name:'es2015',text:'ES2015/ES2016)',checked:false}]
+				+b('ul').list-skill
+					for atr in skill
+						+list(atr)
+			.column
+				- var skill2 = [{name:'gulp',text:'Gulp/GRUNT',checked:true},{name:'webpack',text:'Webpack',checked:false},{name:'webgl',text:'Дружу с WebGL',checked:false},{name:'jq',text:'jQuery',checked:true},{name:'angular',text:'Знаю/изучаю Angular',checked:false},{name:'react',text:'Знаю/изучаю React',checked:false},{name:'node',text:'Знаю/изучаю Node.js',checked:false}]
+				+b('ul').list-skill
+					for atr in skill2
+						+list(atr)
+			.column.col-3
+				- var skill3 = [{name:'git',text:'Использую Git',checked:true},{name:'eye',text:'С глазомером всё ок',checked:true},{name:'laziness',text:'Я ленивый(-ая)',checked:false},{name:'eng',text:'У меня хороший английский',checked:false}]
+				+b('ul').list-skill
+					for atr in skill3
+						+list(atr)

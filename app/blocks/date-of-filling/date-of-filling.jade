@@ -1,0 +1,6 @@
+mixin date-of-filling()
+	+b('fieldset').date-of-filling&attributes(attributes)
+		block
+		.wrap
+			label(for='date') Дата заполнения
+			input(type='text' name='date' id='date' value='05.09.2018')
