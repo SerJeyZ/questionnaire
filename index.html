@@ -11,7 +11,6 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="format-detection" content="address=no">
-		<meta name="google" value="notranslate">
 		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -40,7 +39,7 @@
 		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
 		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
 		<title>My questionnaire</title>
-		<meta name="description" content="">
+		<meta name="description" content="Анкета">
 		<meta name="keywords" content="">
 		<link href="assets/styles/app.min.css" rel="stylesheet">
 	</head>
@@ -49,7 +48,7 @@
 		<header class="page-header">
 			<div class="page-header__right-img"><img src="assets/images/top-secret.png" alt="Top-Secret"></div>
 		</header>
-		<main class="main" role="main">
+		<main class="main">
 			<div class="layout-position">
 				<h1 class="main-title"><img src="assets/images/Title.png" width="221" height="118" alt="Дело" /></h1>
 				<form method="post" action="javascript:void(0);" class="user-skill">
@@ -57,71 +56,71 @@
 						<ul class="user">
 							<li class="user__initials"><label for="initials">Полное ФИО</label><input type="text" name="initials" id="initials"
 								 value="Задорожный Сергей Александрович"></li>
-							<li class="user__birth"><label for="birth">Год рождения</label><input type="text" name="birth" id="birth" value="1984"></li>
+							<li class="user__birth"><label for="birth">Год рождения</label><input type="text" name="birth" id="birth" value="слегка за 30"></li>
 							<li class="user__location"><label for="location">Место жительства</label><input type="text" name="location" id="location"
 								 value="г. Омск, Россия"></li>
-							<li class="user__skype"><label for="skype">Скайп</label><input type="text" name="skype" id="skype" value="SergeyZet"></li>
-							<li class="user__e-mail"><label for="e-mail">Почта</label><input type="e-mail" name="e-mail" id="e-mail" value="rabotnik345@gmail.com"></li>
+							<li class="user__skype"><label for="skype">Скайп</label><input type="text" name="skype" id="skype" value="SergeyZ"></li>
+							<li class="user__e-mail"><label for="e-mail">Почта</label><input type="text" name="e-mail" id="e-mail" value="rabotnik345@gmail.com"></li>
 						</ul>
 					</fieldset>
 					<fieldset class="user-skill-checkbox">
 						<legend class="title">Расскажите о себе чекбоксами</legend>
 						<p class="block-discription">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.</p>
-						<section class="columns">
+						<div class="columns">
 							<div class="column">
 								<ul class="list-skill">
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="bem" id="bem" checked><label for="bem">БЭМ/OOCSS</label></li>
+										<input type="checkbox" name="bem" id="bem" checked><label for="bem">БЭМ/OOCSS</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="pug" id="pug" checked><label for="pug">Pug (Jade)</label></li>
+										<input type="checkbox" name="pug" id="pug" checked><label for="pug">Pug (Jade)</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="stylus" id="stylus" checked><label for="stylus">Stylus/LESS/SASS</label></li>
+										<input type="checkbox" name="stylus" id="stylus" checked><label for="stylus">Stylus/LESS/SASS</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="svg" id="svg" checked><label for="svg">Работаю с SVG</label></li>
+										<input type="checkbox" name="svg" id="svg" checked><label for="svg">Работаю с SVG</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="semantica" id="semantica" checked><label for="semantica">Верстаю
+										<input type="checkbox" name="semantica" id="semantica" checked><label for="semantica">Верстаю
 											семантично</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="a11y" id="a11y" checked><label for="a11y">Accessibility (A11Y)</label></li>
+										<input type="checkbox" name="a11y" id="a11y" checked><label for="a11y">Accessibility (A11Y)</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="es2015" id="es2015"><label for="es2015">ES2015/ES2016)</label></li>
+										<input type="checkbox" name="es2015" id="es2015" checked><label for="es2015">ES2015/ES2016)</label></li>
 								</ul>
 							</div>
 							<div class="column">
 								<ul class="list-skill">
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="gulp" id="gulp" checked><label for="gulp">Gulp/GRUNT</label></li>
+										<input type="checkbox" name="gulp" id="gulp" checked><label for="gulp">Gulp/GRUNT</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="webpack" id="webpack"><label for="webpack">Webpack</label></li>
+										<input type="checkbox" name="webpack" id="webpack"><label for="webpack">Webpack</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="webgl" id="webgl"><label for="webgl">Дружу с WebGL</label></li>
+										<input type="checkbox" name="webgl" id="webgl"><label for="webgl">Дружу с WebGL</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="jq" id="jq" checked><label for="jq">jQuery</label></li>
+										<input type="checkbox" name="jq" id="jq" checked><label for="jq">jQuery</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="angular" id="angular"><label for="angular">Знаю/изучаю Angular</label></li>
+										<input type="checkbox" name="angular" id="angular"><label for="angular">Знаю/изучаю Angular</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="react" id="react"><label for="react">Знаю/изучаю React</label></li>
+										<input type="checkbox" name="react" id="react" checked><label for="react">Знаю/изучаю React</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="node" id="node"><label for="node">Знаю/изучаю Node.js</label></li>
+										<input type="checkbox" name="node" id="node"><label for="node">Знаю/изучаю Node.js</label></li>
 								</ul>
 							</div>
 							<div class="column col-3">
 								<ul class="list-skill">
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="git" id="git" checked><label for="git">Использую Git</label></li>
+										<input type="checkbox" name="git" id="git" checked><label for="git">Использую Git</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="eye" id="eye" checked><label for="eye">С глазомером всё ок</label></li>
+										<input type="checkbox" name="eye" id="eye" checked><label for="eye">С глазомером всё ок</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="laziness" id="laziness"><label for="laziness">Я ленивый(-ая)</label></li>
+										<input type="checkbox" name="laziness" id="laziness"><label for="laziness">Я ленивый(-ая)</label></li>
 									<li class="list-skill__item">
-										<!DOCTYPE html><input type="checkbox" name="eng" id="eng"><label for="eng">У меня хороший английский</label></li>
+										<input type="checkbox" name="eng" id="eng"><label for="eng">У меня хороший английский</label></li>
 								</ul>
 							</div>
-						</section>
+						</div>
 					</fieldset>
 					<fieldset class="user-skill-js">
 						<legend class="title">Уровень владения JavaScript</legend>
-						<section class="user-skill-js__slider">
+						<div class="user-skill-js__slider">
 							<div id="scale" class="scale">
 								<div id="slider-arrow" class="slider-arrow"></div>
 								<div class="scale-item null"><input type="radio" name="js" id="null" value="null" /><label for="null">Не владею</label></div>
@@ -132,18 +131,17 @@
 								<div class="scale-item sen"><input type="radio" name="js" id="sen" value="sen" /><label for="sen">Пишу сложный
 										JS с нуля</label></div>
 							</div>
-						</section>
+						</div>
 					</fieldset>
 					<fieldset class="about">
 						<legend class="title">Расскажите о себе словами</legend>
 						<p class="block-discription block-discription--margin-top block-discription--padding-left">Напишите пару
-							предложений о ваших ожиданиях от работы. Кстати, будет здорово, если при нехватке места для текста строки будут
-							добавляться автоматически.</p><textarea name="about" class="about__text">Всем привет ожидаю levelup по всем направлениям, работа в хорошей команде, ну и интересные задачи!</textarea>
+							предложений о себе. Кстати, при нехватке места для текста строки будут
+							добавляться автоматически.</p><textarea name="about" class="about__text">Всем привет!!! Меня зовут Сергей. Если вам нужна вёрстка лендинга или многостраничного сайта буду рад помочь. Работу выполню в кратчайшие сроки, качественно и с учётом всех ваших пожеланий.</textarea>
 					</fieldset>
 					<fieldset id="plan" class="plan">
 						<legend class="title">Какие у вас планы на будущее?</legend>
-						<p class="block-discription block-discription--margin-top block-discription--padding-left">Этот ответ ни на что
-							не повлияет. Не беда если в будущем ваши планы поменяются.</p>
+						<p class="block-discription block-discription--margin-top block-discription--padding-left">Отметьте направление в котором развиваетесь.</p>
 						<div class="plan__item"><input type="radio" name="plan" id="verstka" value="verstka" checked="checked" /><label
 							 for="verstka">Front-end</label></div>
 						<div class="plan__item"><input type="radio" name="plan" id="js" value="js" /><label for="js">Back-end</label></div>
@@ -151,7 +149,7 @@
 						<div class="plan__item"><input type="radio" name="plan" id="other" value="other" /><label for="other" class="active-radio">Другое</label></div>
 					</fieldset>
 					<fieldset class="date-of-filling">
-						<div class="wrap"><label for="date">Дата заполнения</label><input type="text" name="date" id="date" value="05.09.2018" /></div>
+						<div class="wrap"><label for="date">Дата заполнения</label><input type="text" name="date" id="date" value="недавно" /></div>
 					</fieldset><button class="btn" type="submit">send form</button>
 				</form>
 			</div>
