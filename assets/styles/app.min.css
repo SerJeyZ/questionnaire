@@ -337,6 +337,7 @@ fieldset {
   border: none;
 }
 .page-header {
+  position: relative;
   padding-top: 1px;
 }
 .page-header:after {
@@ -495,6 +496,9 @@ html {
   font-family: PT Sans, Arial, sana-serif;
   font-weight: bold;
   color: #000;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 .list-skill label::before {
   content: '';
